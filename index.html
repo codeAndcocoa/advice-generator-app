@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 14px;
+        text-align: center;
+        color:orange;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container text-center position-relative">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <div class="top">
+          <span class="advice-id"
+            >Advice #<span class="ID"><!-- Advice ID goes here --></span></span
+          >
+        </div>
+        <div class="middle">
+          <p class="advice">"<!-- Advice text goes here -->"</p>
+        </div>
+        <div class="bottom">
+          <picture class="m-auto">
+            <source
+              media="(max-width:768px)"
+              srcset="./images/pattern-divider-mobile.svg"
+            />
+            <img
+              src="./images/pattern-divider-desktop.svg"
+              alt="divider-image"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <div class="generate-btn position-absolute">
+        <img src="./images/icon-dice.svg" alt="dice-icon" class="dice-icon" />
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Naglaa Raslan</a>.
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
